@@ -1,12 +1,13 @@
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+}
 
+body {
   font-size: 18px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   color: #000000;
   font-style: normal;
+  margin: 0;
 
   background-color: #ffffff;
 }
@@ -25,9 +26,8 @@ body {
 
 @font-face {
   font-family: "ArialMT";
-  src: url("../fonts/arialmt.woff") format(".woff"),
+  src: url("../fonts/arialmt.woff") format(".woff");
 }
-
 
 img {
   max-width: 100%;
@@ -43,4 +43,8 @@ img {
   border: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.hidden-image {
+  display: none;
 }
