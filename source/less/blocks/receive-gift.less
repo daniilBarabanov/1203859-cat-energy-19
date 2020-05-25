@@ -1,0 +1,126 @@
+.receive-gift {
+  display: flex;
+  flex-direction: column;
+  width: 87.5%;
+  min-height: 289px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 100% 289px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .receive-gift {
+    background: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 100% 289px;
+  }
+}
+
+.receivegift {
+  display: none;
+}
+
+.receive-gift__description {
+  position: relative;
+  max-width: 162px;
+  height: 56px;
+  margin: 0;
+  margin-top: 62px;
+  margin-left: 58px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.receive-gift__description span {
+  white-space: nowrap;
+}
+
+.receive-gift__gift {
+  position: relative;
+  left: 40%;
+  margin-top: 64px;
+}
+
+@media (min-width: @tablet-width) {
+  .receive-gift {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    box-sizing: border-box;
+    width: 92.3%;
+    padding-bottom: 106px;
+
+    background: url("/img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-size: 100% 200px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .receive-gift {
+      background: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 100% 200px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .receive-gift__gift {
+    left: 12.8%;
+    margin-top: 64px;
+  }
+
+  .receive-gift__description {
+    margin-top: 72px;
+    margin-right: 125px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .receive-gift {
+    display: none;
+  }
+
+  .receivegift {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    height: 289px;
+    margin-left: 80px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .receivegift {
+      background: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px 289px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .receivegift__gift {
+    margin-top: 65px;
+    margin-left: 96px;
+  }
+
+  .receivegift__description {
+    width: 162px;
+    height: 56px;
+    margin-top: 61px;
+    margin-left: 43px;
+    margin-bottom: 0;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
