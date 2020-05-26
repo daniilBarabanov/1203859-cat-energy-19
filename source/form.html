@@ -6,30 +6,16 @@
     <title>Интернет-магазин Cat Energy: подбор программы</title>
     <link
       rel="preload"
-      href="fonts/OswaldRegular.woff2"
+      href="fonts/oswaldregular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/OswaldRegular.woff"
-      as="font"
-      type="font/woff"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/OswaldMedium.woff2"
+      href="fonts/oswaldmedium.woff2"
       as="font"
       type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/OswaldMedium.woff"
-      as="font"
-      type="font/woff"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/min-normalize.css" />
@@ -44,7 +30,7 @@
         <h1 class="visually-hidden">Cat Energy</h1>
         <a
           class="page-header__logo"
-          href="index.html"
+          href="#"
           aria-label="Переход на главную страницу"
         >
           <picture>
@@ -54,32 +40,36 @@
               class="page-header__logo-image"
               src="img/logo-mobile.svg"
               alt="Лого Cat Energy"
-            /> </picture
-        ></a>
+            />
+          </picture>
+        </a>
         <input type="checkbox" id="toggle" class="page-header__menu-opener" />
         <label for="toggle" class="page_header__icon-opener"></label>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a
-                class="site-list__item__link site-list__item"
+                class="site-list__item-link"
                 href="index.html"
+                aria-label="Ссылка на главную страницу"
               >
                 Главная
               </a>
             </li>
             <li class="site-list__item">
               <a
-                class="site-list__item__link site-list__item"
+                class="site-list__item-link"
                 href="catalog.html"
+                aria-label="Ссылка на страницу каталога"
               >
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
               <a
-                class="site-list__item__link--active site-list__item"
+                class="site-list__item-link site-list__item-link--active"
                 href="form.html"
+                aria-label="Ссылка на подбор программы"
               >
                 Подбор программы
               </a>
@@ -144,7 +134,7 @@
             </fieldset>
             <fieldset class="big-form__second second-set">
               <ul class="second-set__list second-list">
-                <li class="second-list__item" tabindex="0">
+                <li class="second-list__item">
                   <input
                     type="radio"
                     class="second-list__input"
@@ -159,7 +149,7 @@
                     >Похудение</label
                   >
                 </li>
-                <li class="second-list__item" tabindex="0">
+                <li class="second-list__item">
                   <input
                     type="radio"
                     class="second-list__input"
@@ -173,7 +163,7 @@
                     >Набор массы</label
                   >
                 </li>
-                <li class="second-list__item" tabindex="0">
+                <li class="second-list__item">
                   <input
                     type="radio"
                     class="second-list__input"
@@ -215,7 +205,7 @@
               <li class="third-list__item">
                 <label class="third-list__label" for="phone">Телефон:*</label>
                 <input
-                  type="email"
+                  type="tel"
                   class="third-list__input"
                   name="phone"
                   id="phone"
@@ -325,7 +315,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <a class="page-footer__logo-link" href="index.html">
+          <a
+            class="page-footer__logo-link"
+            href="index.html"
+            aria-label="Переход на главную страницу сайта"
+          >
             <img
               class="page-footer__logo-image"
               src="img/logo-footer.svg"
@@ -343,7 +337,11 @@
                 href="vk.com"
                 aria-label="Переход на страницу сайта в VK"
               >
-                <svg class="socials-list__icon socials-list__icon--vk">
+                <svg
+                  class="socials-list__icon socials-list__icon--vk"
+                  width="22"
+                  height="12"
+                >
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
@@ -352,9 +350,13 @@
               <a
                 class="socials-list__link"
                 href="instagram.com"
-                aria-label="Переход на страницу Instagram"
+                aria-label="Переход на страницу сайта в instagram"
               >
-                <svg class="socials-list__icon socials-list__icon--instagram">
+                <svg
+                  class="socials-list__icon socials-list__icon--instagram"
+                  width="16"
+                  height="16"
+                >
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
@@ -363,9 +365,13 @@
               <a
                 class="socials-list__link"
                 href="facebook.com"
-                aria-label="Переход на страницу Facebook"
+                aria-label="Переход на страницу сайта в facebook"
               >
-                <svg class="socials-list__icon socials-list__icon--facebook">
+                <svg
+                  class="socials-list__icon socials-list__icon--facebook"
+                  width="10"
+                  height="19"
+                >
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
@@ -379,7 +385,7 @@
             aria-label="Переход на страницу HTML-Academy"
           >
             <span class="copyright__title">HTML Academy</span>
-            <svg class="copyright__logo">
+            <svg class="copyright__logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy-svg"></use>
             </svg>
           </a>

@@ -5,30 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="preload"
-      href="fonts/OswaldRegular.woff2"
+      href="fonts/oswaldregular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/OswaldRegular.woff"
-      as="font"
-      type="font/woff"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/OswaldMedium.woff2"
+      href="fonts/oswaldmedium.woff2"
       as="font"
       type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/OswaldMedium.woff"
-      as="font"
-      type="font/woff"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/min-normalize.css" />
@@ -45,8 +31,8 @@
         <h1 class="visually-hidden">Cat Energy</h1>
         <a
           class="page-header__logo"
-          href="index.html"
-          aria-label="Переход на главную страницу сайта"
+          href="#"
+          aria-label="Переход на главную страницу"
         >
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
@@ -55,30 +41,37 @@
               class="page-header__logo-image"
               src="img/logo-mobile.svg"
               alt="Лого Cat Energy"
-            /> </picture
-        ></a>
+            />
+          </picture>
+        </a>
         <input type="checkbox" id="toggle" class="page-header__menu-opener" />
-        <label for="toggle" class="page_header__icon-opener"></label>
+        <label for="toggle" class="page-header__icon-opener"></label>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a
-                class="site-list__item__link site-list__item"
+                class="site-list__item-link"
                 href="index.html"
+                aria-label="Ссылка на главную страницу"
               >
                 Главная
               </a>
             </li>
             <li class="site-list__item">
               <a
-                class="site-list__item__link--active site-list__item"
+                class="site-list__item-link site-list__item-link--active"
                 href="catalog.html"
+                aria-label="Ссылка на страницу каталога"
               >
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item__link site-list__item" href="form.html">
+              <a
+                class="site-list__item-link"
+                href="form.html"
+                aria-label="Ссылка на подбор программы"
+              >
                 Подбор программы
               </a>
             </li>
@@ -89,7 +82,7 @@
     <main>
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h2 class="title-block__header">Каталог продукции</h2>
+          <h2 class="catalog__header">Каталог продукции</h2>
           <ul class="catalog__list items-list">
             <li class="items-list__item">
               <div class="items-list__wrapper">
@@ -134,8 +127,9 @@
                     />
                     <img
                       class="items-list__image"
-                      src="img/chicken-small-mobile@1x.jpg"
+                      src="img/chicken-small-desktop@1x.png"
                       srcset="img/chicken-small-mobile@2x.jpg 2x"
+                      data-pfsrc="img/chicken-small-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом курицы"
                     />
                   </picture>
@@ -214,8 +208,9 @@
                     />
                     <img
                       class="items-list__image items-list__image--big"
-                      src="img/chicken-big-mobile@1x.jpg"
+                      src="img/chicken-big-desktop@1x.png"
                       srcset="img/chicken-big-mobile@2x.jpg 2x"
+                      data-pfsrc="img/chicken-big-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом курицы"
                     />
                   </picture>
@@ -294,8 +289,9 @@
                     />
                     <img
                       class="items-list__image"
-                      src="img/fish-small-mobile@1x.jpg"
+                      src="img/fish-small-desktop@1x.png"
                       srcset="img/fish-small-mobile@2x.jpg 2x"
+                      data-pfsrc="img/fish-big-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом рыбы"
                     />
                   </picture>
@@ -375,8 +371,9 @@
                     />
                     <img
                       class="items-list__image items-list__image--big"
-                      src="img/fish-big-mobile@1x.jpg"
+                      src="img/fish-big-desktop@1x.png"
                       srcset="img/fish-big-mobile@2x.jpg 2x"
+                      data-pfsrc="img/fish-big-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом рыбы"
                     />
                   </picture>
@@ -456,8 +453,9 @@
                     />
                     <img
                       class="items-list__image"
-                      src="img/buckwheat-small-mobile@1x.jpg"
+                      src="img/buckwheat-small-desktop@1x.png"
                       srcset="img/buckwheat-small-mobile@2x.jpg 2x"
+                      data-pfsrc="img/buckwheat-small-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом гречки"
                     />
                   </picture>
@@ -537,8 +535,9 @@
                     />
                     <img
                       class="items-list__image items-list__image--big"
-                      src="img/buckwheat-big-mobile@1x.jpg"
+                      src="img/buckwheat-big-desktop@1x.png"
                       srcset="img/buckwheat-big-mobile@2x.jpg 2x"
+                      data-pfsrc="img/buckwheat-big-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом гречки"
                     />
                   </picture>
@@ -618,8 +617,9 @@
                     />
                     <img
                       class="items-list__image"
-                      src="img/rice-small-mobile@1x.jpg"
+                      src="img/rice-small-desktop@1x.png"
                       srcset="img/rice-small-mobile@2x.jpg 2x"
+                      data-pfsrc="img/rice-small-mobile@1x.jpg"
                       alt="Питание Cat Energy со вкусом риса"
                     />
                   </picture>
@@ -703,7 +703,7 @@
           </h2>
           <div class="additional-items__connector">
             <ul class="additional-items__list extra-item-list">
-              <li class="additional-items-list__item extra-item">
+              <li class="extra-item-list__item extra-item">
                 <hr class="extra-item__line" />
                 <p class="extra-item__title">Сахарозаменитель</p>
                 <div class="extra-item__wrapper">
@@ -712,7 +712,7 @@
                 </div>
                 <a class="extra-item__link" href="#">Заказать</a>
               </li>
-              <li class="additional-items-list__item extra-item">
+              <li class="extra-item-list__item extra-item">
                 <hr class="extra-item__line" />
                 <p class="extra-item__title">Питьевая вода</p>
                 <div class="extra-item__wrapper">
@@ -721,7 +721,7 @@
                 </div>
                 <a class="extra-item__link" href="#">Заказать</a>
               </li>
-              <li class="additional-items-list__item extra-item">
+              <li class="extra-item-list__item extra-item">
                 <hr class="extra-item__line" />
                 <p class="extra-item__title">Молоко</p>
                 <div class="extra-item__wrapper">
@@ -730,7 +730,7 @@
                 </div>
                 <a class="extra-item__link" href="#">Заказать</a>
               </li>
-              <li class="additional-items-list__item extra-item">
+              <li class="extra-item-list__item extra-item">
                 <hr class="extra-item__line" />
                 <p class="extra-item__title">Витамины</p>
                 <div class="extra-item__wrapper">
@@ -741,9 +741,9 @@
                 <hr class="extra-item__line--last" />
               </li>
             </ul>
-            <div class="additional-items__receivegift receivegift">
+            <div class="additional-items__getcase getcase">
               <svg
-                class="receivegift__gift"
+                class="getcase__gift"
                 version="1.1"
                 id="Layer_6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -769,8 +769,8 @@
                 c0.4,0,0.7,0.3,0.7,0.7V24.7z"
                 ></path>
               </svg>
-              <p class="receivegift__description">
-                Закажите все и получите чехол для кота в подарок!
+              <p class="getcase__description">
+                Закажите все <span> и получите чехол для </span> кота в подарок!
               </p>
             </div>
           </div>
@@ -860,7 +860,11 @@
                 href="vk.com"
                 aria-label="Переход на страницу сайта в VK"
               >
-                <svg class="socials-list__icon socials-list__icon--vk">
+                <svg
+                  class="socials-list__icon socials-list__icon--vk"
+                  width="22"
+                  height="12"
+                >
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
@@ -871,7 +875,11 @@
                 href="instagram.com"
                 aria-label="Переход на страницу сайта в instagram"
               >
-                <svg class="socials-list__icon socials-list__icon--instagram">
+                <svg
+                  class="socials-list__icon socials-list__icon--instagram"
+                  width="16"
+                  height="16"
+                >
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
@@ -882,7 +890,11 @@
                 href="facebook.com"
                 aria-label="Переход на страницу сайта в facebook"
               >
-                <svg class="socials-list__icon socials-list__icon--facebook">
+                <svg
+                  class="socials-list__icon socials-list__icon--facebook"
+                  width="10"
+                  height="19"
+                >
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
@@ -896,7 +908,7 @@
             aria-label="Переход на страницу HTML-Academy"
           >
             <span class="copyright__title">HTML Academy</span>
-            <svg class="copyright__logo">
+            <svg class="copyright__logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy-svg"></use>
             </svg>
           </a>

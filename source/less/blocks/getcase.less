@@ -1,0 +1,51 @@
+.getcase {
+  display: none;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .getcase {
+    background: url("../img/gift-photo-desktop@2x.jpg");
+    background-size: 245px 289px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .getcase {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    min-height: 289px;
+    margin-left: 81px;
+    margin-bottom: 85px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #68b738;
+  }
+
+  .getcase__gift {
+    margin-top: 65px;
+    margin-left: 96px;
+  }
+
+  .getcase__description {
+    width: 162px;
+    min-height: 56px;
+    margin-top: 61px;
+    margin-left: 43px;
+    margin-bottom: 44px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .getcase__description span {
+    white-space: nowrap;
+  }
+}

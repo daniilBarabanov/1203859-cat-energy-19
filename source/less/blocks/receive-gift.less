@@ -1,24 +1,29 @@
 .receive-gift {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 87.5%;
   min-height: 289px;
   margin: 0 auto;
   margin-bottom: 36px;
 
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
-  background-size: 100% 289px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #68b738;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .receive-gift {
     background: url("../img/gift-photo-mobile@2x.jpg");
-    background-size: 100% 289px;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
-.receivegift {
-  display: none;
+.receive-gift__gift {
+  position: relative;
+  margin-top: 65px;
 }
 
 .receive-gift__description {
@@ -26,8 +31,7 @@
   max-width: 162px;
   height: 56px;
   margin: 0;
-  margin-top: 62px;
-  margin-left: 58px;
+  margin-top: 61px;
 
   text-align: center;
   font-size: 16px;
@@ -40,12 +44,6 @@
   white-space: nowrap;
 }
 
-.receive-gift__gift {
-  position: relative;
-  left: 40%;
-  margin-top: 64px;
-}
-
 @media (min-width: @tablet-width) {
   .receive-gift {
     flex-direction: row;
@@ -53,7 +51,7 @@
     min-height: 200px;
     box-sizing: border-box;
     width: 92.3%;
-    padding-bottom: 106px;
+    padding-bottom: 111px;
 
     background: url("/img/gift-photo-tablet@1x.jpg") no-repeat;
     background-size: 100% 200px;
@@ -83,44 +81,5 @@
 @media (min-width: @desktop-width) {
   .receive-gift {
     display: none;
-  }
-
-  .receivegift {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 245px;
-    height: 289px;
-    margin-left: 80px;
-
-    background-image: url("../img/gift-photo-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .receivegift {
-      background: url("../img/gift-photo-desktop@2x.jpg");
-      background-size: 245px 289px;
-      background-repeat: no-repeat;
-    }
-  }
-
-  .receivegift__gift {
-    margin-top: 65px;
-    margin-left: 96px;
-  }
-
-  .receivegift__description {
-    width: 162px;
-    height: 56px;
-    margin-top: 61px;
-    margin-left: 43px;
-    margin-bottom: 0;
-
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #ffffff;
   }
 }

@@ -38,7 +38,7 @@
 .promo-title__header {
   min-width: 245px;
   height: 74px;
-  margin-top: 26px;
+  margin-top: 28px;
 
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 36px;
@@ -85,29 +85,38 @@
 }
 
 .promo-title__image {
-  margin-top: 26px;
-  width: 280px;
-  height: 270px;
+  margin-top: 24px;
+  margin-left: -9px;
+  width: 320px;
+  height: 271px;
+  object-fit: scale-down;
 }
 
 @media (min-width: @tablet-width) {
   .promo-title {
-    position: relative;
-    width: 768px;
+    width: auto;
+    height: 810px;
+    padding: 0 30px;
+    margin: 0 auto;
 
     background: #ffffff;
   }
 
+  .promo-title::after {
+    background-image: none;
+  }
+
   .promo-title__wrapper {
+    position: relative;
     display: block;
-    padding: 0 30px;
+    padding: 0;
   }
 
   .promo-title__header {
     width: 420px;
     height: 122px;
-    margin-top: 61px;
-    padding-left: 88px;
+    margin-top: 62px;
+    padding-left: 87px;
 
     font-size: 60px;
     text-align: left;
@@ -118,9 +127,9 @@
   .promo-title__slogan {
     min-width: 282px;
     height: 22px;
-    padding-left: 90px;
+    padding-left: 88px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 
     color: #111111;
     text-align: left;
@@ -128,21 +137,21 @@
   }
 
   .promo-title__image {
-    width: 709px;
-    max-width: 680px;
-    height: 609px;
-    margin-top: -8px;
-    margin-left: 36px;
-
-    object-fit: contain;
+    display: block;
+    width: 665px;
+    height: 629px;
+    margin: 0 auto;
+    margin-top: -19px;
+    margin-left: 41px;
+    object-fit: scale-down;
   }
 
   .promo-title__button {
     position: absolute;
-    top: 27.5%;
+    top: 28.1%;
     width: 245px;
     height: 52px;
-    margin-left: 93px;
+    margin-left: 89px;
 
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 20px;
@@ -162,7 +171,9 @@
 @media (min-width: @desktop-width) {
   .promo-title {
     position: relative;
-    width: 100%;
+    padding: 0;
+    height: auto;
+    width: auto;
   }
 
   .promo-title__wrapper {
@@ -178,6 +189,8 @@
   }
 
   .promo-title__header {
+    height: auto;
+    min-height: 122px;
     padding-left: 39px;
     margin-top: 0;
 

@@ -6,30 +6,16 @@
     <title>HTML Academy: Интернет-магазин Cat Energy</title>
     <link
       rel="preload"
-      href="fonts/OswaldRegular.woff2"
+      href="fonts/oswaldregular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/OswaldRegular.woff"
-      as="font"
-      type="font/woff"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/OswaldMedium.woff2"
+      href="fonts/oswaldmedium.woff2"
       as="font"
       type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/OswaldMedium.woff"
-      as="font"
-      type="font/woff"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/min-normalize.css" />
@@ -52,15 +38,16 @@
               class="page-header__logo-image"
               src="img/logo-mobile.svg"
               alt="Лого Cat Energy"
-            /> </picture
-        ></a>
+            />
+          </picture>
+        </a>
         <input type="checkbox" id="toggle" class="page-header__menu-opener" />
-        <label for="toggle" class="page_header__icon-opener"></label>
-        <nav class="main-nav">
+        <label for="toggle" class="page-header__icon-opener"></label>
+        <nav class="page-header__nav main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a
-                class="site-list__item__link site-list__item--active"
+                class="site-list__item-link site-list__item-link--active"
                 href="index.html"
                 aria-label="Ссылка на главную страницу"
               >
@@ -69,7 +56,7 @@
             </li>
             <li class="site-list__item">
               <a
-                class="site-list__item__link site-list__item"
+                class="site-list__item-link"
                 href="catalog.html"
                 aria-label="Ссылка на страницу каталога"
               >
@@ -78,7 +65,7 @@
             </li>
             <li class="site-list__item">
               <a
-                class="site-list__item__link site-list__item"
+                class="site-list__item-link"
                 href="form.html"
                 aria-label="Ссылка на подбор программы"
               >
@@ -139,9 +126,9 @@
             />
             <img
               class="promo-title__image"
-              src="img/index-can-mobile@1x.png"
+              src="img/index-can-desktop@1x.png"
               srcset="img/index-can-mobile@2x.png 2x"
-              alt="Баночка еды с курицей"
+              data-pfsrc="img/index-can-mobile@1x.png"
             />
           </picture>
           <a class="promo-title__button" href="#">Подобрать программу</a>
@@ -244,90 +231,99 @@
           </div>
         </div>
         <div class="promo-example__sliderwrap">
-          <div class="sliderwrap sliderwrap--fatcat">
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width: 1300px)"
-                srcset="
-                  img/before-desktop@1x.webp 1x,
-                  img/before-desktop@2x.webp 2x
-                "
-              />
-              <source
-                media="(min-width: 1300px)"
-                srcset="
-                  img/before-desktop@1x.png 1x,
-                  img/before-desktop@2x.png 2x
-                "
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  img/before-tablet@1x.png 1x,
-                  img/before-tablet@2x.png 2x
-                "
-              />
-              <source
-                type="image/webp"
-                srcset="
-                  img/before-mobile@1x.webp 1x,
-                  img/before-mobile@2x.webp 2x
-                "
-              />
-              <img
-                class="promo-example__fatcat"
-                src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x"
-                alt="Толстый кот до похудения"
-              />
-            </picture>
-          </div>
-          <div class="sliderwrap sliderwrap--slimcat">
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width: 1300px)"
-                srcset="
-                  img/after-desktop@1x.webp 1x,
-                  img/after-desktop@2x.webp 2x
-                "
-              />
-              <source
-                media="(min-width: 1300px)"
-                srcset="
-                  img/after-desktop@1x.png 1x,
-                  img/after-desktop@2x.png 2x
-                "
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x"
-              />
-              <source
-                type="image/webp"
-                srcset="
-                  img/after-mobile@1x.webp 1x,
-                  img/after-mobile@2x.webp 2x
-                "
-              />
-              <img
-                class="promo-example__thickcat hidden-image"
-                src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x"
-                alt="Толстый кот после похудения"
-              />
-            </picture>
+          <div class="promo-example__sliderimages">
+            <div class="sliderwrap sliderwrap--fatcat">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1300px)"
+                  srcset="
+                    img/before-desktop@1x.webp 1x,
+                    img/before-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    img/before-desktop@1x.png 1x,
+                    img/before-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/before-tablet@1x.webp 1x,
+                    img/before-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/before-tablet@1x.png 1x,
+                    img/before-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/before-mobile@1x.webp 1x,
+                    img/before-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="promo-example__fatcat"
+                  src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x"
+                  data-pfsrc="img/before-mobile@1x.png"
+                  alt="Толстый кот до похудения"
+                />
+              </picture>
+            </div>
+            <div class="sliderwrap sliderwrap--slimcat">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1300px)"
+                  srcset="
+                    img/after-desktop@1x.webp 1x,
+                    img/after-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    img/after-desktop@1x.png 1x,
+                    img/after-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/after-tablet@1x.png 1x,
+                    img/after-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/after-mobile@1x.webp 1x,
+                    img/after-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="promo-example__thickcat hidden-image"
+                  src="img/after-mobile@1x.png"
+                  srcset="img/after-mobile@2x.png 2x"
+                  alt="Толстый кот после похудения"
+                />
+              </picture>
+            </div>
           </div>
           <div class="promo-example__slider slider">
             <button class="slider__progress-button" type="button">Было</button>
@@ -387,7 +383,11 @@
                 href="vk.com"
                 aria-label="Переход на страницу сайта в VK"
               >
-                <svg class="socials-list__icon socials-list__icon--vk">
+                <svg
+                  class="socials-list__icon socials-list__icon--vk"
+                  width="22"
+                  height="12"
+                >
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
@@ -398,7 +398,11 @@
                 href="instagram.com"
                 aria-label="Переход на страницу сайта в Instagram"
               >
-                <svg class="socials-list__icon socials-list__icon--instagram">
+                <svg
+                  class="socials-list__icon socials-list__icon--instagram"
+                  width="16"
+                  height="16"
+                >
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
@@ -409,7 +413,11 @@
                 href="facebook.com"
                 aria-label="Переход на страницу сайта в Facebook"
               >
-                <svg class="socials-list__icon socials-list__icon--facebook">
+                <svg
+                  class="socials-list__icon socials-list__icon--facebook"
+                  width="10"
+                  height="19"
+                >
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
@@ -423,7 +431,7 @@
             aria-label="Переход на страницу HTML-Academy"
           >
             <span class="copyright__title">HTML Academy</span>
-            <svg class="copyright__logo">
+            <svg class="copyright__logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy-svg"></use>
             </svg>
           </a>
