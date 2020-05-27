@@ -30,7 +30,7 @@
         <h1 class="visually-hidden">Cat Energy</h1>
         <a
           class="page-header__logo"
-          href="#"
+          href="index.html"
           aria-label="Переход на главную страницу"
         >
           <picture>
@@ -103,7 +103,7 @@
                     class="first-set__input"
                     name="name"
                     id="name"
-                    placeholder="Барсик"
+                    placeholder="Барсик" required
                   />
                 </li>
                 <li class="first-list__item">
@@ -115,7 +115,7 @@
                     class="first-set__input"
                     name="weight"
                     id="weight"
-                    placeholder="7"
+                    placeholder="7" required
                   />
                 </li>
                 <li class="first-list__item">
@@ -127,7 +127,7 @@
                     class="first-set__input"
                     name="age"
                     id="age"
-                    placeholder="7"
+                    placeholder="7" required
                   />
                 </li>
               </ul>
@@ -192,7 +192,7 @@
                   class="third-list__input"
                   name="email"
                   id="email"
-                  placeholder="Kuklachev@gmail.com"
+                  placeholder="Kuklachev@gmail.com" required
                 />
                 <svg
                   class="third-list__icon third-list__icon--mail"
@@ -205,11 +205,11 @@
               <li class="third-list__item">
                 <label class="third-list__label" for="phone">Телефон:*</label>
                 <input
-                  type="tel"
+                  type="number"
                   class="third-list__input"
                   name="phone"
                   id="phone"
-                  placeholder="8 (960) 900-60-90"
+                  placeholder="8 (960) 900-60-90" required
                 />
                 <svg
                   class="third-list__icon third-list__icon--phone"
@@ -225,7 +225,7 @@
             <legend class="fourth-set__legend">Комментарий</legend>
             <textarea
               class="fourth-set__area"
-              placeholder="Расскажите обо всех повадках кота"
+              placeholder="Расскажите обо всех повадках кота" required
             ></textarea>
           </fieldset>
           <fieldset class="big-form__fifth fifth-set">

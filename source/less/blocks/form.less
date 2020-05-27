@@ -68,12 +68,21 @@
   font-size: 16px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   text-transform: uppercase;
+  outline: none;
 }
-
+.first-set__input:hover {
+opacity: 0.9;
+}
 .first-set__input:invalid {
   border: 1px solid #ff8282;
 }
+.first-set__input:focus{
+  box-shadow: inset 1px 1px 2px  blue;
+}
 
+.first-set__input:required {
+  border:1px solid #cdcdcd;
+}
 .first-list__item {
   display: flex;
   justify-content: space-between;
@@ -109,7 +118,6 @@
   color: #444444;
   text-transform: uppercase;
 }
-
 /* Выбор программы */
 
 .second-set {
@@ -270,7 +278,16 @@
 
 .third-list__input:invalid {
   border: 1px solid rgba(255, 130, 130, 1);
+
 }
+.third-list__input:required {
+  border:1px solid #cdcdcd;
+  fill: #222222;
+}
+.third-list__input svg {
+  fill: #222222;
+}
+
 
 .third-list__label {
   font-size: 16px;
@@ -318,13 +335,11 @@
   top: 3px;
   left: 88.5%;
 }
-
-.third-list__input:focus ~ .third-list__icon {
-  fill: #68b738;
-}
-
 .third-list__input:invalid ~ .third-list__icon {
   fill: #ff8282;
+}
+.third-list__input:focus ~ .third-list__icon {
+  fill: #68b738;
 }
 
 /* Комментарии и дополнительно */
@@ -367,7 +382,7 @@
 }
 
 .fourth-set__area {
-  width: 95%;
+  width: 90%;
   height: 150px;
   padding: 10px 15px;
   margin-top: 34px;
@@ -468,7 +483,6 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
 }
-
 .fifth-list__label {
   padding-left: 46px;
 }
@@ -777,7 +791,7 @@
 
   .fourth-set__area {
     min-width: 591px;
-    width: 90.5%;
+    width: 85%;
     min-height: 130px;
     padding: 10px 19px;
     margin: 0 auto;
@@ -1029,7 +1043,7 @@
   }
 
   .fourth-set__area {
-    width: 100%;
+    width: 97%;
     margin-left: 0;
     margin-top: 76px;
     padding: 10px 18px;
