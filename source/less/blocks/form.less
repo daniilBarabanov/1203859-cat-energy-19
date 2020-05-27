@@ -73,15 +73,18 @@
 .first-set__input:hover {
 opacity: 0.9;
 }
-.first-set__input:invalid {
-  border: 1px solid #ff8282;
-}
-.first-set__input:focus{
-  box-shadow: inset 1px 1px 2px  blue;
-}
 
 .first-set__input:required {
   border:1px solid #cdcdcd;
+}
+
+.first-set__input:focus{
+  box-shadow: inset 0 0 0 1px #444444;
+}
+
+.first-set__input:focus:invalid {
+  border-color: #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
 }
 .first-list__item {
   display: flex;
@@ -264,6 +267,9 @@ opacity: 0.9;
   text-transform: uppercase;
   list-style: none;
 }
+.third-list__icon--mail {
+  fill:#222222;
+}
 
 .third-list__input {
   height: 40px;
@@ -274,18 +280,17 @@ opacity: 0.9;
   border: 1px solid rgba(205, 205, 205, 1);
   font-family: "Oswald-Regular", "Arial", sans-serif;
   text-transform: uppercase;
-}
-
-.third-list__input:invalid {
-  border: 1px solid rgba(255, 130, 130, 1);
-
-}
-.third-list__input:required {
-  border:1px solid #cdcdcd;
-  fill: #222222;
+  outline: none;
 }
 .third-list__input svg {
   fill: #222222;
+}
+.third-list__input:focus{
+  box-shadow: inset 0 0 0 1px #444444;
+}
+.third-list__input:focus:invalid {
+  border-color: #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
 }
 
 
@@ -335,7 +340,10 @@ opacity: 0.9;
   top: 3px;
   left: 88.5%;
 }
-.third-list__input:invalid ~ .third-list__icon {
+.third-list__input ~ .third-list__icon {
+  fill:#444444;
+}
+.third-list__input:focus:invalid ~ .third-list__icon {
   fill: #ff8282;
 }
 .third-list__input:focus ~ .third-list__icon {
@@ -402,6 +410,8 @@ opacity: 0.9;
 .fourth-set__area:focus {
   opacity: 1;
   color: #444444;
+  outline: none;
+  box-shadow: inset 0 0 0 1px #444444;
 }
 
 /* Дополнительно */
